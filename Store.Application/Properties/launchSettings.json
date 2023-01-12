@@ -1,0 +1,32 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:30144/swagger/",
+      "sslPort": 44344
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "OX_SS_DB_CONNECTIONSTRING_DEV": "Server=(localdb)\\MSSQLLocalDB;Database=StoreContext;Trusted_Connection=True;",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Store.Application": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "Test": "Test",
+        "OX_SS_DB_CONNECTIONSTRING_DEV": "Server=(localdb)\\MSSQLLocalDB;Database=StoreContext;Trusted_Connection=True;",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:5069;http://localhost:5070"
+    }
+  }
+}
